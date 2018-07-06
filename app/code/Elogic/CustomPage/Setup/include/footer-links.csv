@@ -1,0 +1,43 @@
+"title","identifier","content"
+"Footer links","footer-links-block","<div class='box informational page-main'>
+<ul>
+<li>
+<h4>Contactgegevens</h4>
+<ul>
+<li>PortofoonWEB <br /> De Hemmen 88 <br />9206 AG Drachten</li>
+<li><i class='ic_tel'></i><a href='tel:0512745293'>0512 - 745 293</a> <br /> <i class='ic_mail'></i><a href='mailto:info@portofoonweb.nl'>info@portofoonweb.nl</a></li>
+<li>K.v.K nr: <span>59799110</span> <br /> BTW nr: <span>106862303B01</span></li>
+</ul>
+</li>
+<li>
+<h4>Klantenservice</h4>
+<ul>
+<li><a href='{{store url='contact'}}'>Contact</a></li>
+<li><a href='{{store url='over-portofoonweb'}}'>Over PortofoonWEB</a></li>
+<li><a href='{{store url='offerte-aanvragen'}}'>Offerte aanvraag</a></li>
+<li><a href='{{store url='defect-en-retour'}}'>Defect en Retour</a></li>
+<li><a href='{{store url='garantie'}}'>Garantie</a></li>
+<li><a href='{{store url='veel-gestelde-vragen'}}'>Veelgestelde vragen</a></li>
+<li><a href='{{store url='b2b'}}'>B2B</a></li>
+</ul>
+</li>
+<li>
+<h4>Algemene Informatie</h4>
+<ul>
+<li><a href='{{store url='portofoons'}}'>Portofoons</a></li>
+<li><a href='{{store url='toepassingen'}}'>Toepassingen</a></li>
+<li><a href='{{store url='algemene-voorwaarden'}}'>Algemene voorwaarden</a></li>
+<li><a href='{{store url='betalen-en-verzenden'}}'>Betalen en Verzenden</a></li>
+<li><a href='{{store url='cookie-statement'}}'>Cookie statement</a></li>
+<li><a href='{{store url='privacy-statement'}}'>Privacy statement</a></li>
+</ul>
+</li>
+<li class='last'>
+<h4>Nieuwsbrief</h4>
+<ul>
+<li>Wilt u op de hoogte gehouden worden van de nieuwste Technieken &amp; Aanbiedingen op het gebied van Portofoons? {{block class='Magento\Newsletter\Block\Subscribe' template='subscribe.phtml' }}</li>
+<li class='soc_icons'><a class='footer-logo' title='portofoon' href='https://www.smartportofoon.nl' target='_blank'> <img src='{{media url='wysiwyg/smartportofoon-logo_1.png'}}' alt='' /> </a> <a title='Facebook' href='http://www.facebook.com/portofoonweb' target='_blank'><i class='fa fa-facebook-official '> </i></a> <a title='Twitter' href='https://twitter.com/portofoonweb' target='_blank'><i class='fa fa-twitter-square '> </i></a></li>
+</ul>
+</li>
+</ul>
+</div>"

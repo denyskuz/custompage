@@ -1,0 +1,28 @@
+"title","identifier","content"
+"Custompage Content","custompage_content","<div class='page-title-wrapper'>
+    <h1 class='page-title'>
+        <span class='base' data-ui-id='page-title-wrapper'>Bedankt voor uw bestelling bij PortofoonWEB!</span>
+    </h1>
+</div>
+<div class='custompage-content'>
+    <div class='text-wrapper'>
+         <div class='text-item'>
+             <p class='text-title'><b>Goed om te weten</b></p>
+             <p>Bent u tevreden over het bestelproces, like dan onze Facebook pagina. Of laat een review achter. Zo maakt u ook nog eens kans op een leuke cadeau bon ter waarde van €100,- . Wilt u graag op de hoogte blijven van het laatste nieuws en speciale aanbiedingen meld u zich dan aan op onze nieuwsbrief. </p>
+         </div>
+         <div class='text-item'>
+             <p class='text-title'>Wat gaat er nu gebeuren?</p>
+             <p>Per email heeft u een bevestiging ontvangen van uw bestelling met Ordernummer 14001417721. Heeft u de bestelling op een werkdag voor 17:00 gedaan en betaald, dan gaan wij nu direct aan de slag om te zorgen dat u het morgen in huis heeft. Heeft u vragen over de bestelling neem dan contact met ons op 0512 – 745293 of stuur ons een email aan info@portofoonweb.nl.</p>
+         </div>
+         <div class='text-item'>
+             <p class='text-title'>Wist u dat?</p>
+             <p>PortofoonWEB heeft sinds kort een fenomenaal nieuwe techniek genaamd Smart Portofoons. Een portofoon systeem met ongekende mogelijkheden en onbeperkt bereik! Klik op onderstaand logo voor meer informatie.</p>
+         </div>
+    </div>
+</div>
+<div class='custompage-bottom'>
+    <a class='footer-logo' title='portofoon' href='#' target='_blank'>
+        <img src='{{view url='Elogic_CustomPage::images/smartportofoon-logo.png'}}' alt='portofoon'>
+    </a>
+</div>
+"

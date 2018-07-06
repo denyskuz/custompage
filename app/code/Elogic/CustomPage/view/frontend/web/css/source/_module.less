@@ -1,0 +1,94 @@
+@import "owl-carousel/owl.carousel.min.css";
+@import "owl-carousel/owl.theme.default.min.css";
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+
+  //Brands Slider
+  .brands-slider{
+    border-top: 2px solid #c6c6c6;
+    border-bottom: 2px solid #c6c6c6;
+    margin-bottom: 4px; 
+    padding: 20px 0;
+
+    .owl-carousel{
+      max-width: @layout__max-width;
+      padding-left: @layout-indent__width;
+      padding-right: @layout-indent__width;
+      margin:0 auto;
+      box-sizing: border-box;
+      .owl-item{
+         img{
+           height: auto;
+           width: auto;
+           max-width: 200px;
+         }
+         .item{
+           .lib-vendor-prefix-display(flex);
+            align-items: flex-end;
+            justify-content: center;
+            height: 70px;
+         }
+      }
+    }
+  }
+  //Content Page
+  .custompage-index-index{
+    .page-title-wrapper {
+      position: relative;
+      height: auto;
+      width: auto;
+      margin-top: 50px;
+      text-align: center;
+      color: #626262;
+      .page-title{
+        margin-bottom: 50px;
+      }
+      span{
+        font-weight: 400;
+        font-size: 3.6rem;
+      }
+    }
+  }
+  .custompage-content{
+    text-align: center;
+    color: #626262;
+    .text-wrapper{
+      margin: 0 auto;
+      max-width: 696px;
+      position: relative;
+      font-size: 19px;
+      line-height: 22px;
+      &:before{
+        content: '';
+        background: url('@{baseDir}Elogic_CustomPage/images/mobile_green.png') center center no-repeat;
+        background-size: cover;
+        height: 302px;
+        width: 130px;
+        display: block;
+        position: absolute;
+        left: -171px;
+        top: -34px;
+
+      }
+    }
+    .text-title{
+      font-weight: 700;
+    }
+  }
+  .custompage-bottom{
+    margin: 20px 0;
+      .footer-logo{
+        max-width: 200px;
+        display: block;
+        margin: 0 auto;
+        img{
+          width: 100%;
+        }
+      }
+  }
+
+}

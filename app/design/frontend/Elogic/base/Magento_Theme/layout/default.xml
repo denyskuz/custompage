@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/logo.png</argument>
+                <argument name="logo_img_width" xsi:type="number">300</argument>
+                <argument name="logo_img_height" xsi:type="number">50</argument>
+            </arguments>
+        </referenceBlock>
+        <referenceBlock name="header" remove="true" />
+        <referenceBlock name="compare-link-wrapper" remove="true" />
+        <referenceBlock name="register-link" remove="true" />
+        <move element="minicart" destination="header.panel" after="top.links"/>
+        <block class="Magento\Cms\Block\Block" name="header-phone">
+            <arguments>
+                <argument name="block_id" xsi:type="string">header-phone</argument>
+            </arguments>
+        </block>
+        <move element="header-phone" destination="header-wrapper" after="top.search"/>
+        <referenceContainer name="footer">
+          <block class="Magento\Cms\Block\Block" name="footer_links_block">
+              <arguments>
+                  <argument name="block_id" xsi:type="string">footer-links-block</argument>
+              </arguments>
+          </block>
+          <referenceBlock name="form.subscribe" remove="true"/>
+          <referenceBlock name="footer_links" remove="true"/>
+        </referenceContainer>
+    </body>
+</page>

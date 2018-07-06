@@ -1,0 +1,98 @@
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+
+    //  Newsletter subscription
+    .block.newsletter {
+        margin-bottom: 20px;
+
+        .form.subscribe {
+            display: table;
+            width: 100%;
+        }
+
+        .fieldset {
+            display: table-cell;
+            margin: 0;
+            padding: 0;
+            vertical-align: top;
+        }
+
+        .field {
+            margin: 0;
+
+            .control {
+                //.lib-icon-font(
+                //@icon-envelope,
+                //@_icon-font-size: 16px,
+                //@_icon-font-line-height: 32px,
+                //@_icon-font-color: @form-element-input-placeholder__color,
+                //@_icon-font-margin: 0 0 0 8px
+                //);
+
+                &:before {
+                    position: absolute;
+                }
+
+                display: block;
+            }
+        }
+
+        input {
+            background: transparent;
+            border-right: 0px;
+            border-color: @color-green__base;
+            .lib-input-placeholder(#fff);
+            border-radius: 3px 0px 0px 3px;
+            color: #fff;
+
+        }
+
+        .title {
+            display: none;
+        }
+
+        .label {
+            &:extend(.abs-visually-hidden all);
+        }
+
+        .actions {
+            display: table-cell;
+            vertical-align: top;
+            width: 1%;
+        }
+
+        .action.subscribe {
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+            margin-left: -1px;
+            height: 32px;
+            white-space: nowrap;
+            background: url('@{baseDir}images/fly.png') center center;
+            background-repeat: no-repeat;
+            background-size: 65%;
+            border-color: @color-green__base;
+            border-left: 0px;
+            span {
+                display: none;
+            }
+        }
+    }
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .block.newsletter {
+        width: 34%;
+    }
+}
