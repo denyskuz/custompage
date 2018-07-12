@@ -1,5 +1,9 @@
 <?xml version="1.0"?>
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd" layout="1column">
+    <head>
+       <css src="Elogic_CustomPage::css/source/owl-carousel/owl.theme.default.min.css" />
+       <css src="Elogic_CustomPage::css/source/owl-carousel/owl.carousel.min.css" />
+   </head>
     <body>
         <referenceContainer name="content">
           <block class="Magento\Cms\Block\Block" name="custompage_content">
@@ -8,9 +12,10 @@
                   </arguments>
           </block>
         </referenceContainer>
-        <container name="custompage.brandsslider" htmlTag="div" htmlClass="brands-slider" after="content">
-             <block class="Magento\Framework\View\Element\Template" name="custompage_brands" template="Elogic_CustomPage::custompage/brands.phtml" />
-        </container>
-        <move element="custompage.brandsslider" destination="page.wrapper" after="main.content" />
+        <referenceContainer name="page.wrapper">
+            <container name="custompage.brandsslider" htmlTag="div" htmlClass="brands-slider" after="content">
+                <block class="Magento\Framework\View\Element\Template" name="custompage_brands" template="Elogic_CustomPage::custompage/brands.phtml" />
+            </container>
+        </referenceContainer>
     </body>
 </page>

@@ -14,24 +14,27 @@
                 <argument name="logo_img_height" xsi:type="number">50</argument>
             </arguments>
         </referenceBlock>
-        <referenceBlock name="header" remove="true" />
-        <referenceBlock name="compare-link-wrapper" remove="true" />
-        <referenceBlock name="register-link" remove="true" />
-        <move element="minicart" destination="header.panel" after="top.links"/>
-        <block class="Magento\Cms\Block\Block" name="header-phone">
-            <arguments>
-                <argument name="block_id" xsi:type="string">header-phone</argument>
-            </arguments>
-        </block>
-        <move element="header-phone" destination="header-wrapper" after="top.search"/>
+        <referenceContainer name="header-wrapper">
+            <block class="Magento\Cms\Block\Block" name="header-phone">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">header-phone</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
         <referenceContainer name="footer">
           <block class="Magento\Cms\Block\Block" name="footer_links_block">
               <arguments>
                   <argument name="block_id" xsi:type="string">footer-links-block</argument>
               </arguments>
           </block>
-          <referenceBlock name="form.subscribe" remove="true"/>
-          <referenceBlock name="footer_links" remove="true"/>
         </referenceContainer>
+
+        <referenceBlock name="header" remove="true" />
+        <referenceBlock name="compare-link-wrapper" remove="true" />
+        <referenceBlock name="register-link" remove="true" />
+        <referenceBlock name="form.subscribe" remove="true"/>
+        <referenceBlock name="footer_links" remove="true"/>
+
+        <move element="minicart" destination="header.panel" after="top.links"/>
     </body>
 </page>

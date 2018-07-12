@@ -1,6 +1,3 @@
-@import "owl-carousel/owl.carousel.min.css";
-@import "owl-carousel/owl.theme.default.min.css";
-
 //
 //  Common
 //  _____________________________________________
@@ -11,7 +8,7 @@
   .brands-slider{
     border-top: 2px solid #c6c6c6;
     border-bottom: 2px solid #c6c6c6;
-    margin-bottom: 4px; 
+    margin-bottom: 4px;
     padding: 20px 0;
 
     .owl-carousel{
@@ -62,18 +59,7 @@
       position: relative;
       font-size: 19px;
       line-height: 22px;
-      &:before{
-        content: '';
-        background: url('@{baseDir}Elogic_CustomPage/images/mobile_green.png') center center no-repeat;
-        background-size: cover;
-        height: 302px;
-        width: 130px;
-        display: block;
-        position: absolute;
-        left: -171px;
-        top: -34px;
 
-      }
     }
     .text-title{
       font-weight: 700;
@@ -91,4 +77,24 @@
       }
   }
 
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l){
+  .custompage-content{
+    .text-wrapper{
+      max-width: 696px;
+      &:before{
+        content: '';
+        background: url('@{baseDir}Elogic_CustomPage/images/mobile_green.png') center center no-repeat;
+        background-size: cover;
+        height: 302px;
+        width: 130px;
+        display: block;
+        position: absolute;
+        left: -171px;
+        top: -34px;
+
+      }
+    }
+  }
 }

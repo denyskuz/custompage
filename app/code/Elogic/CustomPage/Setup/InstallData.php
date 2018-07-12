@@ -2,7 +2,7 @@
 
 namespace Elogic\CustomPage\Setup;
 
-use Elogic\Cms\Model\CmsSetup;
+use Elogic\CustomPage\Model\CmsSetup;
 use Magento\Framework\Setup\InstallDataInterface;
 use Magento\Framework\Setup\ModuleContextInterface;
 use Magento\Framework\Setup\ModuleDataSetupInterface;

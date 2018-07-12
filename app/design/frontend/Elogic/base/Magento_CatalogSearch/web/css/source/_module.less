@@ -223,7 +223,7 @@
     .block-search {
         //float: right;
         display: inline-block;
-        flex-basis: 440px;
+        flex-basis: 33%;
         padding-left: 15px;
         position: relative;
         //width: 250px;
@@ -294,5 +294,10 @@
 
     .search-autocomplete {
         margin-top: 0;
+    }
+}
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__xl) {
+    .block-search {
+        flex-basis: 440px;
     }
 }

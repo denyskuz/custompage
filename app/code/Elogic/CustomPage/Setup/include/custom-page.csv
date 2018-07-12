@@ -1,7 +1,7 @@
 "title","identifier","content"
 "Custompage Content","custompage_content","<div class='page-title-wrapper'>
     <h1 class='page-title'>
-        <span class='base' data-ui-id='page-title-wrapper'>Bedankt voor uw bestelling bij PortofoonWEB!</span>
+        <span class='base' data-ui-id='page-title-wrapper'>New Title Bedankt voor uw bestelling bij PortofoonWEB!</span>
     </h1>
 </div>
 <div class='custompage-content'>
